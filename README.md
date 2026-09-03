@@ -18,6 +18,17 @@
 
 ## 更新流程
 
+### 论文列表（自动同步 ORCID）
+
+Publications 板块**不需要手动更新**：网页加载时由 `index.conf` 里的脚本实时从
+ORCID（<https://orcid.org/0000-0003-2755-0013>）公共 API 拉取并渲染。
+
+- 新增/修改论文：直接在 ORCID 中操作即可，主页自动同步（无需改动本仓库）。
+- 尚未收录进 ORCID 的条目放在 `index.jemdoc` 的 "Other Papers and Preprints"
+  一节；一旦在 ORCID 中补录，请从该节删除，避免重复。
+
+### 其他内容（简介、经历、报告等）
+
 1. 编辑 `index.jemdoc` 的内容；
 2. 在本机（需 Python 3，例如 anaconda 的 python3）重新生成网页：
 

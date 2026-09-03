@@ -17,6 +17,7 @@
 <td align="left"><p>An-Bao Xu<br /><br />
 Lecturer with the College of Mathematics and Physics, Wenzhou University<br /><br />
 Email: <a href="mailto:xuanbao@wzu.edu.cn">xuanbao@wzu.edu.cn</a><br /><br />
+<a href="https://orcid.org/0000-0003-2755-0013">ORCID: 0000-0003-2755-0013</a><br /><br />
 <a href="files/CV.pdf"><i> Curriculum Vitae</i></a><br /><br /></p>
 </td></tr></table>
 <h2>Short Bio</h2>
@@ -39,18 +40,12 @@ He is currently a Lecturer with the College of Mathematics and Physics, Wenzhou 
 </li>
 </ul>
 <h2>Publications</h2>
+<p><div id="publications-container">正在从 ORCID 加载论文列表……若长时间无法显示，请访问 https://orcid.org/0000-0003-2755-0013 。</div></p>
+<h2>Other Papers and Preprints</h2>
 <ul>
-<li><p>An-Bao Xu, Dongxiu Xie, Low-rank approximation pursuit for matrix completion, Mechanical Systems and Signal Processing, vol. 95, pp. 77-89, 2017.</p>
+<li><p>An-Bao Xu, Zhen-yun Peng, Norm-constrained least-squares solutions to the matrix equation AXB = C, Abstract and Applied Analysis, vol. 2013, Article ID 781276, 2013. <a href="https://doi.org/10.1155/2013/781276">DOI: 10.1155/2013/781276</a></p>
 </li>
-<li><p>Dongxiu Xie, An-Bao Xu, Zhen-yun Peng, Least-squares symmetric solution to the matrix equation AXB = C with the norm inequality constraint, International Journal of Computer Mathematics, vol. 93, no. 9, pp. 1564-1578, 2016.</p>
-</li>
-<li><p>An-Bao Xu, Zhen-yun Peng, Norm-constrained least-squares solutions to the matrix equation AXB = C, Abstract and Applied Analysis, vol. 2013 (2013), 10 p., <a href="http://dx.doi.org/10.1155/2013/781276">DOI: 10.1155/2013/781276</a>.</p>
-</li>
-<li><p>Frank Uhlig, An-Bao Xu, Iterative optimal solutions for solvable and unsolvable inhomogeneous linear
-matrix equations of Sylvester and Lyapunov type (submitted).</p>
-</li>
-<li><p>Dongxiu Xie, Hugo J. Woerdeman, An-Bao Xu, Parametrized quasi-soft thresholding operator for
-compressed sensing and matrix completion. (submitted)</p>
+<li><p>Dongxiu Xie, An-Bao Xu, Zhen-yun Peng, Least-squares symmetric solution to the matrix equation AXB = C with the norm inequality constraint, International Journal of Computer Mathematics, vol. 93, no. 9, pp. 1564-1578, 2016. <a href="https://doi.org/10.1080/00207160.2015.1067310">DOI: 10.1080/00207160.2015.1067310</a></p>
 </li>
 <li><p>An-Bao Xu, Tensor completion via a low-rank approximation pursuit, April 2020.</p>
 </li>
@@ -70,10 +65,90 @@ compressed sensing and matrix completion. (submitted)</p>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-09-03 12:48:15 CST, by An-Bao Xu.
+Page generated 2026-09-03 13:35:48 CST, by An-Bao Xu.
 </div>
 </div>
 </div>
 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/map_v2.js?d=19SkOTvgZhKO46cBNNPcYLIYLG0UhWjp4XfNKND_PWw&w=100" ></script>
+<script type="text/javascript">
+(function () {
+  var ORCID_ID = '0000-0003-2755-0013';
+  var API = 'https://pub.orcid.org/v3.0';
+  var box = document.getElementById('publications-container');
+  if (!box) { return; }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function isSelf(name) {
+    return /an[\s-]?bao\s*xu/i.test(name) || /xu\s*,\s*an[\s-]?bao/i.test(name);
+  }
+  function dateKey(w) {
+    var d = w['publication-date'] || {};
+    var y = parseInt((d.year || {}).value || '0', 10);
+    var m = parseInt((d.month || {}).value || '0', 10);
+    return y * 100 + m;
+  }
+  function render(works) {
+    var html = '<ul>';
+    for (var i = 0; i < works.length; i++) {
+      var w = works[i];
+      var title = ((w.title || {}).title || {}).value || '(untitled)';
+      var journal = ((w['journal-title'] || {}).value || '');
+      var year = (((w['publication-date'] || {}).year || {}).value || '');
+      var doi = '';
+      var doiUrl = '';
+      var ids = ((w['external-ids'] || {})['external-id'] || []);
+      for (var j = 0; j < ids.length; j++) {
+        if (ids[j]['external-id-type'] === 'doi' && !doi) {
+          doi = ids[j]['external-id-value'] || '';
+          doiUrl = ((ids[j]['external-id-url'] || {}).value) || ('https://doi.org/' + doi);
+        }
+      }
+      var authors = [];
+      var cs = ((w.contributors || {}).contributor || []);
+      for (var k = 0; k < cs.length; k++) {
+        var nm = ((cs[k]['credit-name'] || {}).value || '');
+        if (!nm) { continue; }
+        authors.push(isSelf(nm) ? '<b>' + esc(nm) + '</b>' : esc(nm));
+      }
+      html += '<li><p>';
+      if (authors.length) { html += authors.join(', ') + ', '; }
+      html += esc(title);
+      if (journal) { html += ', ' + esc(journal); }
+      if (year) { html += ', ' + esc(year); }
+      if (doi) { html += '. <a href="' + esc(doiUrl) + '">DOI: ' + esc(doi) + '</a>'; }
+      html += '</p></li>';
+    }
+    html += '</ul>';
+    box.innerHTML = html;
+  }
+  fetch(API + '/' + ORCID_ID + '/works', { headers: { 'Accept': 'application/json' } })
+    .then(function (r) {
+      if (!r.ok) { throw new Error('HTTP ' + r.status); }
+      return r.json();
+    })
+    .then(function (d) {
+      var groups = d.group || [];
+      var works = [];
+      for (var i = 0; i < groups.length; i++) {
+        var w = (groups[i]['work-summary'] || [])[0];
+        if (w) { works.push(w); }
+      }
+      works.sort(function (a, b) { return dateKey(b) - dateKey(a); });
+      return Promise.all(works.map(function (w) {
+        return fetch(API + '/' + ORCID_ID + '/work/' + w['put-code'], { headers: { 'Accept': 'application/json' } })
+          .then(function (r) { return r.json(); })
+          .then(function (detail) { w.contributors = detail.contributors; return w; })
+          .catch(function () { return w; });
+      }));
+    })
+    .then(render)
+    .catch(function () {
+      box.innerHTML = '<p>无法实时加载 ORCID 数据，请访问 <a href="https://orcid.org/' + ORCID_ID + '">ORCID 主页</a> 查看论文列表。</p>';
+    });
+})();
+</script>
 </body>
 </html>

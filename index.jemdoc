@@ -5,6 +5,7 @@
 An-Bao Xu\n\n
 Lecturer with the College of Mathematics and Physics, Wenzhou University\n\n
 Email: [xuanbao@wzu.edu.cn]\n\n
+[https://orcid.org/0000-0003-2755-0013 ORCID: 0000-0003-2755-0013]\n\n
 [files/CV.pdf / Curriculum Vitae/]\n\n
 ~~~
 
@@ -24,13 +25,13 @@ He is currently a Lecturer with the College of Mathematics and Physics, Wenzhou 
 
 == Publications
 
-- An-Bao Xu, Dongxiu Xie, Low-rank approximation pursuit for matrix completion, Mechanical Systems and Signal Processing, vol. 95, pp. 77-89, 2017.
-- Dongxiu Xie, An-Bao Xu, Zhen-yun Peng, Least-squares symmetric solution to the matrix equation AXB = C with the norm inequality constraint, International Journal of Computer Mathematics, vol. 93, no. 9, pp. 1564-1578, 2016.
-- An-Bao Xu, Zhen-yun Peng, Norm-constrained least-squares solutions to the matrix equation AXB = C, Abstract and Applied Analysis, vol. 2013 (2013), 10 p., [http://dx.doi.org/10.1155/2013/781276 DOI: 10.1155\/2013\/781276].
-- Frank Uhlig, An-Bao Xu, Iterative optimal solutions for solvable and unsolvable inhomogeneous linear
-matrix equations of Sylvester and Lyapunov type (submitted).
-- Dongxiu Xie, Hugo J. Woerdeman, An-Bao Xu, Parametrized quasi-soft thresholding operator for
-compressed sensing and matrix completion. (submitted)
+# 论文列表由网页脚本实时从 ORCID 拉取并渲染，增改论文请直接在 ORCID (https://orcid.org/0000-0003-2755-0013) 中操作，本页会自动同步。
+{{<div id="publications-container">正在从 ORCID 加载论文列表……若长时间无法显示，请访问 https://orcid.org/0000-0003-2755-0013 。</div>}}
+
+== Other Papers and Preprints
+# 以下条目尚未收录进 ORCID；收录后请从本列表删除，以免与上方列表重复。
+- An-Bao Xu, Zhen-yun Peng, Norm-constrained least-squares solutions to the matrix equation AXB = C, Abstract and Applied Analysis, vol. 2013, Article ID 781276, 2013. [https://doi.org/10.1155/2013/781276 DOI: 10.1155\/2013\/781276]
+- Dongxiu Xie, An-Bao Xu, Zhen-yun Peng, Least-squares symmetric solution to the matrix equation AXB = C with the norm inequality constraint, International Journal of Computer Mathematics, vol. 93, no. 9, pp. 1564-1578, 2016. [https://doi.org/10.1080/00207160.2015.1067310 DOI: 10.1080\/00207160.2015.1067310]
 - An-Bao Xu, Tensor completion via a low-rank approximation pursuit, April 2020.
 
 == Contributed Talk
