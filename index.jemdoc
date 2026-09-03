@@ -35,13 +35,9 @@ He has led two research projects, respectively funded by the National Natural Sc
 == Other Papers and Preprints
 # 以下条目尚未收录进 ORCID；收录后请从本列表删除，以免与上方列表重复。
 - Jiahao Guo, An-Bao Xu, High-performance privacy-preserving matrix completion for trajectory recovery, arXiv preprint arXiv:2405.05789, 2024. [https://arxiv.org/abs/2405.05789 arXiv: 2405.05789]
-- Jiqian Zhao, An-Bao Xu, Infrared small target detection via tensor $L_{2,1}$-norm minimization and ASSTV regularization: A novel tensor recovery approach, arXiv preprint arXiv:2402.18003, 2024. [https://arxiv.org/abs/2402.18003 arXiv: 2402.18003]
+- Jiqian Zhao, An-Bao Xu, Infrared small target detection via tensor L2,1-norm minimization and ASSTV regularization: A novel tensor recovery approach, arXiv preprint arXiv:2402.18003, 2024. [https://arxiv.org/abs/2402.18003 arXiv: 2402.18003]
 - Qianxi Wu, An-Bao Xu, A biased deep tensor factorization network for tensor completion, arXiv preprint arXiv:2105.09629, 2021. [https://arxiv.org/abs/2105.09629 arXiv: 2105.09629]
 - An-Bao Xu, Tensor completion via a low-rank approximation pursuit, arXiv preprint arXiv:2004.08872, 2020. [https://arxiv.org/abs/2004.08872 arXiv: 2004.08872]
-
-== BibTeX
-# BibTeX 条目由网页脚本根据 ORCID 论文与上方预印本自动生成，支持一键复制。
-{{<div id="bibtex-container">正在生成 BibTeX 条目……</div>}}
 
 == Contributed Talk
 - The 8th International Conference on Matrix Analysis and Application (ICMAA 2019), University of Nevada, Reno, USA, July 15-18, 2019.\n-Contributed Talk: Tensor completion via low-rank approximation pursuit.
